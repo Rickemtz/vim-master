@@ -1,0 +1,21 @@
+id: borrar-002
+module: 4
+title: "Cambia una palabra"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `cw` para cambiar "coche" por "auto" (cw no borra el espacio
+  siguiente, a diferencia de dw).
+initial: |
+  el coche rojo
+cursor_start: [0, 3]
+target: |
+  el auto rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 6
+solution: "cwauto<Esc>"
+allowed: [c, w]
+forbid_arrows: true
+hints:
+  - "cw cambia solo hasta el final de la palabra, deja el espacio"

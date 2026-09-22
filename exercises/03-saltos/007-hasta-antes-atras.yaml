@@ -1,0 +1,20 @@
+id: saltos-007
+module: 3
+title: "Para justo antes, hacia atrás"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `Tr` para parar justo después de la "r" más cercana hacia atrás.
+initial: |
+  el coche rojo
+cursor_start: [0, 12]
+target: |
+  el coche rojo
+target_cursor: [0, 10]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "Tr"
+allowed: [T]
+forbid_arrows: true
+hints:
+  - "T es como F pero se detiene un carácter después"

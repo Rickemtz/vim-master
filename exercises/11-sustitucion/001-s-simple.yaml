@@ -1,0 +1,21 @@
+id: sust-001
+module: 11
+title: "Sustituye la primera coincidencia"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `:s/rojo/azul/` para cambiar la primera "rojo" de la línea por
+  "azul".
+initial: |
+  el coche rojo y la moto rojo
+cursor_start: [0, 0]
+target: |
+  el coche azul y la moto rojo
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 14
+solution: ":s/rojo/azul/<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - ":s/patrón/reemplazo/ cambia solo la primera coincidencia de la línea actual"

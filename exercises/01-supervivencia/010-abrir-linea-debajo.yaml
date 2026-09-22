@@ -1,0 +1,23 @@
+id: supervivencia-010
+module: 1
+title: "Abre una línea debajo"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `o` para abrir una línea nueva debajo y escribe "segunda" en ella.
+initial: |
+  primera
+  tercera
+cursor_start: [0, 0]
+target: |
+  primera
+  segunda
+  tercera
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 9
+solution: "osegunda<Esc>"
+allowed: [o]
+forbid_arrows: true
+hints:
+  - "o abre una línea nueva justo debajo y entra en modo Insert"

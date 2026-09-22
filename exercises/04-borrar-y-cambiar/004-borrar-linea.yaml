@@ -1,0 +1,23 @@
+id: borrar-004
+module: 4
+title: "Borra una línea completa"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `dd` para borrar la línea "dos" completa.
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [1, 0]
+target: |
+  uno
+  tres
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 2
+solution: "dd"
+allowed: [dd]
+forbid_arrows: true
+hints:
+  - "dd (la d dos veces) borra la línea entera"

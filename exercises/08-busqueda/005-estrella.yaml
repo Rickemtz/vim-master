@@ -1,0 +1,21 @@
+id: busqueda-005
+module: 8
+title: "Busca la palabra bajo el cursor con *"
+difficulty: 3
+type: cursor
+instructions: |
+  Con el cursor sobre "gato", usa `*` para saltar a la siguiente
+  aparición de esa palabra completa (no a "gatito").
+initial: |
+  gato negro, gatito y otro gato
+cursor_start: [0, 0]
+target: |
+  gato negro, gatito y otro gato
+target_cursor: [0, 26]
+time_limit_sec: 20
+par_keystrokes: 1
+solution: "*"
+allowed: []
+forbid_arrows: true
+hints:
+  - "* busca la palabra completa, ignora coincidencias parciales como \"gatito\""

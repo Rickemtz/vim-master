@@ -1,0 +1,21 @@
+id: visual-008
+module: 9
+title: "Visual, salir con Esc y reintentar"
+difficulty: 2
+type: edit
+instructions: |
+  Practica cancelar una selección: entra con `v`, avanza con `ll`,
+  cancela con `Esc`, y ahora borra las 3 primeras letras con `3x`.
+initial: |
+  hola mundo
+cursor_start: [0, 0]
+target: |
+  homundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 6
+solution: "vll<Esc>3x"
+allowed: []
+forbid_arrows: true
+hints:
+  - "Esc en Visual cancela la selección y vuelve a Normal sin cambiar el texto"

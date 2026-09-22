@@ -1,0 +1,21 @@
+id: deshacer-003
+module: 5
+title: "Deshaz una inserción completa"
+difficulty: 2
+type: edit
+instructions: |
+  Escribe "Hola " con `i` y `Esc`, y deshazlo todo de una vez con `u`
+  (una sesión de Insert completa es una sola unidad de deshacer).
+initial: |
+  mundo
+cursor_start: [0, 0]
+target: |
+  mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 8
+solution: "iHola <Esc>u"
+allowed: [i, u]
+forbid_arrows: true
+hints:
+  - "u deshace TODO lo escrito en la última sesión de Insert, no letra por letra"

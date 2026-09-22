@@ -1,0 +1,22 @@
+id: macro-001
+module: 12
+title: "Graba y repite una macro"
+difficulty: 3
+type: edit
+instructions: |
+  Graba con `qa`, borra un carácter con `x`, termina con `q`, y repite
+  la macro dos veces más con `@a@a`.
+initial: |
+  ---hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 8
+solution: "qaxq@a@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "qa empieza a grabar en el registro a; q (sola, mientras grabas) la termina"
+  - "@a repite la macro grabada en el registro a"

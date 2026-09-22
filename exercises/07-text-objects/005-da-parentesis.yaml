@@ -1,0 +1,20 @@
+id: textobj-005
+module: 7
+title: "Borra un paréntesis completo (da()"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `da(` para borrar "(bar, baz)" completo, paréntesis incluidos.
+initial: |
+  foo(bar, baz)
+cursor_start: [0, 6]
+target: |
+  foo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "da("
+allowed: []
+forbid_arrows: true
+hints:
+  - "da( incluye los paréntesis; di( solo el contenido"

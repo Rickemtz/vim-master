@@ -1,0 +1,26 @@
+id: saltos-002
+module: 3
+title: "Salta a la última línea"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `G` para ir a la última línea del archivo.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [0, 0]
+target: |
+  uno
+  dos
+  tres
+  cuatro
+target_cursor: [3, 0]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "G"
+allowed: [G]
+forbid_arrows: true
+hints:
+  - "G sola (sin número) va a la última línea"

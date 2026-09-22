@@ -1,0 +1,22 @@
+id: copiar-001
+module: 6
+title: "Copia una palabra y pégala antes"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `yiw` para copiar la palabra bajo el cursor, y `P` para pegarla
+  antes del cursor.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  holahola
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 4
+solution: "yiwP"
+allowed: [y, i, w, P]
+forbid_arrows: true
+hints:
+  - "yiw copia la palabra (\"yank inner word\")"
+  - "P pega antes del cursor"

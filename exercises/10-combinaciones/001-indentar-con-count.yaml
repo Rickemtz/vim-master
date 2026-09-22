@@ -1,0 +1,27 @@
+id: combo-001
+module: 10
+title: "Indenta varias líneas con un count"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `3>>` para indentar la línea actual y las dos siguientes de una
+  sola vez.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [0, 0]
+target: |2
+      uno
+      dos
+      tres
+  cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "3>>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de >> indenta esa cantidad de líneas"

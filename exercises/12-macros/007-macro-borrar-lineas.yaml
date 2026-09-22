@@ -1,0 +1,27 @@
+id: macro-007
+module: 12
+title: "Macro para borrar líneas alternadas"
+difficulty: 4
+type: edit
+instructions: |
+  El cursor está sobre la primera línea "DELETE". Graba `ddj` (borra la
+  línea y baja) y repítela para llegar a la segunda "DELETE".
+initial: |
+  keep1
+  DELETE
+  keep2
+  DELETE
+  keep3
+cursor_start: [1, 0]
+target: |
+  keep1
+  keep2
+  keep3
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 8
+solution: "qaddjq@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "tras borrar una línea, el resto sube; j te deja justo sobre la siguiente a borrar"

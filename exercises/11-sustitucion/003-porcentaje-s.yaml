@@ -1,0 +1,25 @@
+id: sust-003
+module: 11
+title: "Sustituye en todo el archivo"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `:%s/gato/perro/` para cambiar la primera "gato" de CADA línea,
+  sin importar en qué línea esté el cursor.
+initial: |
+  tengo un gato
+  el gato duerme
+  gato negro
+cursor_start: [1, 0]
+target: |
+  tengo un perro
+  el perro duerme
+  perro negro
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 16
+solution: ":%s/gato/perro/<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "el % antes de s aplica el cambio a todas las líneas, no solo la actual"

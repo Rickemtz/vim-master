@@ -1,0 +1,21 @@
+id: busqueda-007
+module: 8
+title: "Repite la búsqueda varias veces con un count"
+difficulty: 3
+type: cursor
+instructions: |
+  Busca "x" con `/x` y Enter, y usa `2n` para saltar dos coincidencias
+  más de una sola vez.
+initial: |
+  x-x-x-x
+cursor_start: [0, 0]
+target: |
+  x-x-x-x
+target_cursor: [0, 6]
+time_limit_sec: 20
+par_keystrokes: 5
+solution: "/x<CR>2n"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de n repite la búsqueda esa cantidad de veces"

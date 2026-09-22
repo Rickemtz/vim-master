@@ -1,0 +1,21 @@
+id: busqueda-004
+module: 8
+title: "Repite en dirección opuesta con N"
+difficulty: 3
+type: cursor
+instructions: |
+  Busca "la" hacia adelante con `/la` y Enter, y usa `N` para retroceder
+  a la coincidencia anterior.
+initial: |
+  la sala se llama Lala
+cursor_start: [0, 6]
+target: |
+  la sala se llama Lala
+target_cursor: [0, 5]
+time_limit_sec: 25
+par_keystrokes: 5
+solution: "/la<CR>N"
+allowed: []
+forbid_arrows: true
+hints:
+  - "N repite la última búsqueda en dirección opuesta"

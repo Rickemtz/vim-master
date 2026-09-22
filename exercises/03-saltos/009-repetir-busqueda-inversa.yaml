@@ -1,0 +1,21 @@
+id: saltos-009
+module: 3
+title: "Repite en dirección opuesta con ,"
+difficulty: 3
+type: cursor
+instructions: |
+  Usa `f-`, luego `;` dos veces para avanzar, y `,` para retroceder un
+  paso (dirección opuesta a `f`).
+initial: |
+  a-b-c-d-e
+cursor_start: [0, 0]
+target: |
+  a-b-c-d-e
+target_cursor: [0, 3]
+time_limit_sec: 20
+par_keystrokes: 5
+solution: "f-;;,"
+allowed: [f, ";", ","]
+forbid_arrows: true
+hints:
+  - ", repite el último f/F/t/T pero en la dirección contraria"

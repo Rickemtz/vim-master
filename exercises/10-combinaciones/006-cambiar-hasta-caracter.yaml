@@ -1,0 +1,21 @@
+id: combo-006
+module: 10
+title: "Operador + f/t"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `ct.` para cambiar todo hasta (sin incluir) el primer punto por
+  " ya".
+initial: |
+  esperando.fin
+cursor_start: [0, 0]
+target: |2
+   ya.fin
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 6
+solution: "ct. ya<Esc>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "ct<char> cambia hasta justo antes de ese carácter"

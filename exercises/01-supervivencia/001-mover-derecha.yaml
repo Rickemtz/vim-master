@@ -1,0 +1,20 @@
+id: supervivencia-001
+module: 1
+title: "Muévete a la derecha"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `l` para mover el cursor tres posiciones a la derecha, sin tocar el texto.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: [0, 3]
+time_limit_sec: 15
+par_keystrokes: 3
+solution: "lll"
+allowed: [l]
+forbid_arrows: true
+hints:
+  - "l mueve el cursor una posición a la derecha"

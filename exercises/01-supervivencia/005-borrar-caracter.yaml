@@ -1,0 +1,20 @@
+id: supervivencia-005
+module: 1
+title: "Borra un carácter"
+difficulty: 1
+type: edit
+instructions: |
+  Borra la "x" al inicio de la línea con el comando `x`.
+initial: |
+  xhola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "x"
+allowed: [x]
+forbid_arrows: true
+hints:
+  - "x borra el carácter bajo el cursor"

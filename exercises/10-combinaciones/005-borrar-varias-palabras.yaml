@@ -1,0 +1,20 @@
+id: combo-005
+module: 10
+title: "Operador + count + motion"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `d3w` para borrar las tres primeras palabras de una sola vez.
+initial: |
+  uno dos tres cuatro
+cursor_start: [0, 0]
+target: |
+  cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "d3w"
+allowed: []
+forbid_arrows: true
+hints:
+  - "el count puede ir antes del operador o antes del movimiento: d3w = 3dw"

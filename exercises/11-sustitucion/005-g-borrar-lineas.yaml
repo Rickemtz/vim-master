@@ -1,0 +1,26 @@
+id: sust-005
+module: 11
+title: "Borra líneas que coinciden con :g"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `:g/TODO/d` para borrar todas las líneas que contengan "TODO".
+initial: |
+  uno
+  TODO arreglar esto
+  dos
+  TODO revisar aquello
+  tres
+cursor_start: [0, 0]
+target: |
+  uno
+  dos
+  tres
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 8
+solution: ":g/TODO/d<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - ":g/patrón/d borra TODAS las líneas que contienen el patrón, en cualquier parte del archivo"

@@ -1,0 +1,22 @@
+id: busqueda-008
+module: 8
+title: "La búsqueda da la vuelta al final del archivo"
+difficulty: 3
+type: cursor
+instructions: |
+  El cursor ya está después de la única "meta". Usa `/meta` y Enter: al
+  no encontrar nada más adelante, Vim da la vuelta y la encuentra al
+  principio.
+initial: |
+  meta lejos de aqui
+cursor_start: [0, 10]
+target: |
+  meta lejos de aqui
+target_cursor: [0, 0]
+time_limit_sec: 20
+par_keystrokes: 6
+solution: "/meta<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "por defecto, Vim busca dando la vuelta (wrapscan) si no encuentra nada más adelante"

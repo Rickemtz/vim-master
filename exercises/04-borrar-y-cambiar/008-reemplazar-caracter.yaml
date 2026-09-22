@@ -1,0 +1,21 @@
+id: borrar-008
+module: 4
+title: "Reemplaza un carácter"
+difficulty: 1
+type: edit
+instructions: |
+  Usa `r` seguido de una letra para reemplazar el carácter bajo el
+  cursor sin entrar en modo Insert.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  Xola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "rX"
+allowed: [r]
+forbid_arrows: true
+hints:
+  - "r + una letra reemplaza un solo carácter y vuelve a Normal"

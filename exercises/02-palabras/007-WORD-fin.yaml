@@ -1,0 +1,20 @@
+id: palabras-007
+module: 2
+title: "WORD: salta al final"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `E` para saltar al último carácter de la WORD actual.
+initial: |
+  el auto-rojo veloz
+cursor_start: [0, 3]
+target: |
+  el auto-rojo veloz
+target_cursor: [0, 11]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "E"
+allowed: [E]
+forbid_arrows: true
+hints:
+  - "E es como e pero para WORD (ignora la puntuación pegada)"

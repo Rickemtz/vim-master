@@ -1,0 +1,20 @@
+id: palabras-010
+module: 2
+title: "Fin de línea"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `$` para ir al último carácter de la línea.
+initial: |
+  hola mundo
+cursor_start: [0, 0]
+target: |
+  hola mundo
+target_cursor: [0, 9]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "$"
+allowed: ["$"]
+forbid_arrows: true
+hints:
+  - "$ va al último carácter de la línea actual"

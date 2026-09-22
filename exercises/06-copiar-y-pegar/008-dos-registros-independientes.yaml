@@ -1,0 +1,22 @@
+id: copiar-008
+module: 6
+title: "Dos registros a la vez"
+difficulty: 4
+type: edit
+instructions: |
+  Copia "AAA" en el registro "a" con `"ayiw`, copia "BBB" en el registro
+  sin nombre con `wyiw`, ve al final con `$`, y pega primero `"ap` y
+  luego `p`: cada registro guarda algo distinto.
+initial: |
+  AAA BBB
+cursor_start: [0, 0]
+target: |
+  AAA BBBAAABBB
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 14
+solution: '"ayiwwyiw$"app'
+allowed: []
+forbid_arrows: true
+hints:
+  - 'el registro "a" y el registro sin nombre son independientes'

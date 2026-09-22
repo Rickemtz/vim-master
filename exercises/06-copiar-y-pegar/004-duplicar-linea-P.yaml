@@ -1,0 +1,24 @@
+id: copiar-004
+module: 6
+title: "Duplica una línea arriba"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `yy` para copiar la línea completa y `P` para pegar una copia
+  encima de la línea actual.
+initial: |
+  hola
+  mundo
+cursor_start: [1, 0]
+target: |
+  hola
+  mundo
+  mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "yyP"
+allowed: [y, P]
+forbid_arrows: true
+hints:
+  - "P pega encima de la línea actual"

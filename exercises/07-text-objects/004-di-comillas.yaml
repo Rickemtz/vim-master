@@ -1,0 +1,21 @@
+id: textobj-004
+module: 7
+title: 'Borra dentro de comillas (di")'
+difficulty: 3
+type: edit
+instructions: |
+  Usa `di"` para vaciar el contenido entre comillas dobles, sin
+  necesidad de posicionar el cursor con precisión.
+initial: |
+  nombre = "Ana" fin
+cursor_start: [0, 12]
+target: |
+  nombre = "" fin
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: 'di"'
+allowed: []
+forbid_arrows: true
+hints:
+  - 'di" busca el par de comillas en la línea actual, no hace falta estar justo encima'

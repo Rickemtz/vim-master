@@ -1,0 +1,21 @@
+id: textobj-008
+module: 7
+title: "Borra dentro de una etiqueta (dit)"
+difficulty: 4
+type: edit
+instructions: |
+  Usa `dit` para vaciar el contenido de la etiqueta `<b>` sin tocar las
+  etiquetas ni el resto de la línea.
+initial: |
+  <p>hola <b>mundo</b></p>
+cursor_start: [0, 12]
+target: |
+  <p>hola <b></b></p>
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 3
+solution: "dit"
+allowed: []
+forbid_arrows: true
+hints:
+  - "it = inner tag: busca la etiqueta que más de cerca envuelve al cursor"

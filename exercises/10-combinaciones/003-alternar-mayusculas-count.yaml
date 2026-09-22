@@ -1,0 +1,21 @@
+id: combo-003
+module: 10
+title: "Alterna mayúsculas con un count"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `4~` para alternar mayúsculas/minúsculas de los primeros 4
+  caracteres de una vez.
+initial: |
+  hola mundo
+cursor_start: [0, 0]
+target: |
+  HOLA mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 2
+solution: "4~"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de ~ alterna esa cantidad de caracteres de una vez"

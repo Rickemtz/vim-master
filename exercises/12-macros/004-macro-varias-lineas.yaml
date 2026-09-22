@@ -1,0 +1,25 @@
+id: macro-004
+module: 12
+title: "Aplica una macro a varias líneas"
+difficulty: 4
+type: edit
+instructions: |
+  Graba `A;<Esc>j` (añade ";" al final y baja una línea), y repítela
+  dos veces más para cubrir las tres líneas.
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [0, 0]
+target: |
+  uno;
+  dos;
+  tres;
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 11
+solution: "qaA;<Esc>jq@a@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "graba el patrón completo (incluido el salto a la siguiente línea) para poder repetirlo tal cual"

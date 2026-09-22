@@ -1,0 +1,23 @@
+id: copiar-006
+module: 6
+title: "Pega varias veces con un count"
+difficulty: 3
+type: edit
+instructions: |
+  Copia la línea "x" con `yy` y pégala 3 veces de una sola vez con `3p`.
+initial: |
+  x
+cursor_start: [0, 0]
+target: |
+  x
+  x
+  x
+  x
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 4
+solution: "yy3p"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de p lo pega esa cantidad de veces seguidas"

@@ -1,0 +1,20 @@
+id: saltos-005
+module: 3
+title: "Busca un carácter hacia atrás"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `Fr` para saltar hacia atrás hasta la "r" más cercana.
+initial: |
+  el coche rojo
+cursor_start: [0, 12]
+target: |
+  el coche rojo
+target_cursor: [0, 9]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "Fr"
+allowed: [F]
+forbid_arrows: true
+hints:
+  - "F busca hacia atrás en la línea, F mayúscula"

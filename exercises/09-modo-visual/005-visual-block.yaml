@@ -1,0 +1,25 @@
+id: visual-005
+module: 9
+title: "Borra una columna con Visual Block"
+difficulty: 4
+type: edit
+instructions: |
+  Usa Ctrl-v para entrar en Visual Block, baja dos líneas con `jj` y
+  borra con `d`: se borra la misma columna en las tres líneas.
+initial: |
+  abc
+  def
+  ghi
+cursor_start: [0, 0]
+target: |
+  bc
+  ef
+  hi
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 4
+solution: "<C-v>jjd"
+allowed: []
+forbid_arrows: true
+hints:
+  - "Ctrl-v selecciona un bloque rectangular, no líneas ni caracteres sueltos"

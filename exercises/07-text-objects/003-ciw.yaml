@@ -1,0 +1,21 @@
+id: textobj-003
+module: 7
+title: "Cambia la palabra interna (ciw)"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `ciw` para cambiar "coche" por "auto" sin importar en qué parte de
+  la palabra esté el cursor.
+initial: |
+  el coche rojo
+cursor_start: [0, 6]
+target: |
+  el auto rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 7
+solution: "ciwauto<Esc>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "ciw funciona igual sin importar la posición exacta del cursor en la palabra"

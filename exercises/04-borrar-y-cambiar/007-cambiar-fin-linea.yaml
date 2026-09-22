@@ -1,0 +1,20 @@
+id: borrar-007
+module: 4
+title: "Cambia hasta el final de la línea"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `C` para borrar desde el cursor hasta el final y escribir "XY".
+initial: |
+  hola mundo
+cursor_start: [0, 4]
+target: |
+  holaXY
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 4
+solution: "CXY<Esc>"
+allowed: [C]
+forbid_arrows: true
+hints:
+  - "C es un atajo de c$"

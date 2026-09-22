@@ -1,0 +1,24 @@
+id: supervivencia-004
+module: 1
+title: "Sube de línea"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `k` para subir dos líneas, hasta "uno".
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [2, 0]
+target: |
+  uno
+  dos
+  tres
+target_cursor: [0, 0]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "kk"
+allowed: [k]
+forbid_arrows: true
+hints:
+  - "k mueve el cursor una línea hacia arriba"

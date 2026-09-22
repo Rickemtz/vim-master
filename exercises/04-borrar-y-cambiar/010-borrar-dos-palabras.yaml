@@ -1,0 +1,20 @@
+id: borrar-010
+module: 4
+title: "Combina un count con un operador"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `2dw` para borrar las dos primeras palabras de una sola vez.
+initial: |
+  el coche rojo veloz
+cursor_start: [0, 0]
+target: |
+  rojo veloz
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "2dw"
+allowed: [d, w]
+forbid_arrows: true
+hints:
+  - "un count antes del operador multiplica el movimiento: 2dw = dw dw"

@@ -1,0 +1,24 @@
+id: visual-006
+module: 9
+title: "V con un count selecciona varias líneas"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `3V` para seleccionar de una vez la línea actual y las dos
+  siguientes, y bórralas con `d`.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [0, 0]
+target: |
+  cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "3Vd"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de V extiende la selección esa cantidad de líneas"

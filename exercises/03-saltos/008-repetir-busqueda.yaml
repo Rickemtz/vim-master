@@ -1,0 +1,20 @@
+id: saltos-008
+module: 3
+title: "Repite la búsqueda con ;"
+difficulty: 3
+type: cursor
+instructions: |
+  Usa `f-` y luego `;` dos veces para saltar sobre el tercer guion.
+initial: |
+  a-b-c-d-e
+cursor_start: [0, 0]
+target: |
+  a-b-c-d-e
+target_cursor: [0, 5]
+time_limit_sec: 15
+par_keystrokes: 4
+solution: "f-;;"
+allowed: [f, ";"]
+forbid_arrows: true
+hints:
+  - "; repite el último f/F/t/T en la misma dirección"

@@ -1,0 +1,20 @@
+id: palabras-003
+module: 2
+title: "Retrocede una palabra"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `b` para saltar al inicio de la palabra anterior.
+initial: |
+  el coche rojo
+cursor_start: [0, 9]
+target: |
+  el coche rojo
+target_cursor: [0, 3]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "b"
+allowed: [b]
+forbid_arrows: true
+hints:
+  - "b salta al inicio de la palabra anterior"

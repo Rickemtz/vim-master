@@ -1,0 +1,20 @@
+id: saltos-004
+module: 3
+title: "Busca un carácter hacia adelante"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `fr` para saltar hasta la siguiente "r" en la línea.
+initial: |
+  el coche rojo
+cursor_start: [0, 0]
+target: |
+  el coche rojo
+target_cursor: [0, 9]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "fr"
+allowed: [f]
+forbid_arrows: true
+hints:
+  - "f seguido de una letra salta sobre ella en la línea actual"

@@ -1,0 +1,20 @@
+id: busqueda-002
+module: 8
+title: "Busca hacia atrás"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `?mundo` y Enter para buscar "mundo" hacia atrás.
+initial: |
+  hola mundo cruel mundo
+cursor_start: [0, 22]
+target: |
+  hola mundo cruel mundo
+target_cursor: [0, 17]
+time_limit_sec: 20
+par_keystrokes: 7
+solution: "?mundo<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "? abre la búsqueda hacia atrás"

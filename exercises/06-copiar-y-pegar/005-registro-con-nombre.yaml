@@ -1,0 +1,21 @@
+id: copiar-005
+module: 6
+title: "Usa un registro con nombre"
+difficulty: 3
+type: edit
+instructions: |
+  Copia "uno" en el registro "a" con `"ayiw`, ve al final de la línea con
+  `$`, y pégalo con `"ap`.
+initial: |
+  uno dos
+cursor_start: [0, 0]
+target: |
+  uno dosuno
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 8
+solution: '"ayiw$"ap'
+allowed: []
+forbid_arrows: true
+hints:
+  - '"a antes de un comando elige el registro "a" en vez del registro sin nombre'

@@ -1,0 +1,24 @@
+id: supervivencia-011
+module: 1
+title: "Abre una línea arriba"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `O` para abrir una línea nueva arriba de "tercera" y escribe
+  "segunda" en ella.
+initial: |
+  primera
+  tercera
+cursor_start: [1, 0]
+target: |
+  primera
+  segunda
+  tercera
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 9
+solution: "Osegunda<Esc>"
+allowed: [O]
+forbid_arrows: true
+hints:
+  - "O abre una línea nueva justo arriba y entra en modo Insert"

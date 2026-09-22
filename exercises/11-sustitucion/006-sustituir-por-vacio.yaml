@@ -1,0 +1,21 @@
+id: sust-006
+module: 11
+title: "Sustituye por nada para borrar un patrón"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `:s/XX//g` para quitar todas las "XX" de la línea (el reemplazo
+  puede quedar vacío).
+initial: |
+  hXXolXXa
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 9
+solution: ":s/XX//g<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "el reemplazo entre la segunda y tercera barra puede quedar vacío"

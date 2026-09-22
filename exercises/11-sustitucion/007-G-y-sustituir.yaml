@@ -1,0 +1,25 @@
+id: sust-007
+module: 11
+title: "Ve a una línea y sustituye solo ahí"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `G` para ir a la última línea, y `:s/x/y/` para cambiar solo ahí,
+  sin tocar las demás líneas que también tienen "x".
+initial: |
+  x uno
+  x dos
+  x tres
+cursor_start: [0, 0]
+target: |
+  x uno
+  x dos
+  y tres
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 9
+solution: "G:s/x/y/<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - ":s sin % solo afecta a la línea donde está el cursor"

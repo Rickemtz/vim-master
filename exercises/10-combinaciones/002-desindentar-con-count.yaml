@@ -1,0 +1,25 @@
+id: combo-002
+module: 10
+title: "Desindenta varias líneas con un count"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `2<<` para quitarle la indentación a la línea actual y la
+  siguiente.
+initial: |2
+      uno
+      dos
+  tres
+cursor_start: [0, 0]
+target: |
+  uno
+  dos
+  tres
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "2<<"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de << quita la indentación de esa cantidad de líneas"

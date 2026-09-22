@@ -1,0 +1,22 @@
+id: sust-004
+module: 11
+title: "Sustituye todo, en todas las líneas"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `:%s/x/y/g` para cambiar todas las "x" por "y" en todo el archivo.
+initial: |
+  x-x
+  x-x
+cursor_start: [0, 0]
+target: |
+  y-y
+  y-y
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 10
+solution: ":%s/x/y/g<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "combina % (todas las líneas) con g (todas las coincidencias por línea)"

@@ -1,0 +1,21 @@
+id: textobj-002
+module: 7
+title: "Borra la palabra y su espacio (daw)"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `daw` para borrar "coche" junto con el espacio que la separa de la
+  palabra siguiente.
+initial: |
+  el coche rojo
+cursor_start: [0, 5]
+target: |
+  el rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "daw"
+allowed: []
+forbid_arrows: true
+hints:
+  - "daw = delete a word: incluye el espacio alrededor"

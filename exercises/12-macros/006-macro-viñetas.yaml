@@ -1,0 +1,25 @@
+id: macro-006
+module: 12
+title: "Macro para convertir en lista"
+difficulty: 4
+type: edit
+instructions: |
+  Graba `I- <Esc>j` (inserta "- " al inicio y baja), y repítela para
+  las tres líneas.
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [0, 0]
+target: |
+  - uno
+  - dos
+  - tres
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 12
+solution: "qaI- <Esc>jq@a@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "I inserta antes del primer carácter no blanco de la línea"

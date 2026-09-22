@@ -1,0 +1,20 @@
+id: deshacer-002
+module: 5
+title: "Rehaz con Ctrl-r"
+difficulty: 2
+type: edit
+instructions: |
+  Borra con `x`, deshazlo con `u`, y vuelve a aplicarlo con `Ctrl-r`.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  ola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 3
+solution: "xu<C-r>"
+allowed: [x, u]
+forbid_arrows: true
+hints:
+  - "Ctrl-r rehace lo último que deshiciste con u"

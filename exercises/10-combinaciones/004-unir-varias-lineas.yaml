@@ -1,0 +1,23 @@
+id: combo-004
+module: 10
+title: "Une varias líneas con un count"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `4J` para unir la línea actual con las 3 siguientes en una sola.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [0, 0]
+target: |
+  uno dos tres cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 2
+solution: "4J"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de J une esa cantidad de líneas en total"

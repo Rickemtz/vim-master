@@ -1,0 +1,21 @@
+id: supervivencia-008
+module: 1
+title: "Inserta al inicio del texto"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `I` para ir al primer carácter no blanco de la línea e insertar
+  "Hola " ahí, sin importar dónde esté el cursor.
+initial: |2
+    mundo
+cursor_start: [0, 5]
+target: |2
+    Hola mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 7
+solution: "IHola <Esc>"
+allowed: [I]
+forbid_arrows: true
+hints:
+  - "I inserta antes del primer carácter no blanco de la línea, no en la columna 0"

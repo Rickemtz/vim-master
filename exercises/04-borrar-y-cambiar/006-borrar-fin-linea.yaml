@@ -1,0 +1,20 @@
+id: borrar-006
+module: 4
+title: "Borra hasta el final de la línea"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `D` para borrar desde el cursor hasta el final de la línea.
+initial: |
+  hola mundo
+cursor_start: [0, 4]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "D"
+allowed: [D]
+forbid_arrows: true
+hints:
+  - "D es un atajo de d$"

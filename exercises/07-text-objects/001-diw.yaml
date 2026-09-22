@@ -1,0 +1,21 @@
+id: textobj-001
+module: 7
+title: "Borra la palabra interna (diw)"
+difficulty: 2
+type: edit
+instructions: |
+  Con el cursor en cualquier parte de "coche", usa `diw` para borrar
+  solo esa palabra, dejando los espacios que la rodean.
+initial: |
+  el coche rojo
+cursor_start: [0, 5]
+target: |
+  el  rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "diw"
+allowed: []
+forbid_arrows: true
+hints:
+  - "diw = delete inner word: borra la palabra sin tocar los espacios"

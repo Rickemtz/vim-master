@@ -1,0 +1,21 @@
+id: palabras-009
+module: 2
+title: "Primer carácter no blanco"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `^` para ir al primer carácter no blanco de la línea (a diferencia
+  de `0`, que va siempre a la columna 0).
+initial: |2
+     hola mundo
+cursor_start: [0, 10]
+target: |2
+     hola mundo
+target_cursor: [0, 3]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "^"
+allowed: ["^"]
+forbid_arrows: true
+hints:
+  - "^ salta los espacios iniciales; 0 no"

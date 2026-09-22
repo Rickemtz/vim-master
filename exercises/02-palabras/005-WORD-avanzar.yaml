@@ -1,0 +1,21 @@
+id: palabras-005
+module: 2
+title: "WORD: avanza ignorando puntuación"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `W` para saltar a la siguiente WORD (a diferencia de `w`, ignora la
+  puntuación pegada a las letras).
+initial: |
+  el auto-rojo veloz
+cursor_start: [0, 3]
+target: |
+  el auto-rojo veloz
+target_cursor: [0, 13]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "W"
+allowed: [W]
+forbid_arrows: true
+hints:
+  - "W trata \"auto-rojo\" como una sola WORD, sin detenerse en el guion"

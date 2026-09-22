@@ -1,0 +1,20 @@
+id: deshacer-004
+module: 5
+title: "Deshaz varios cambios"
+difficulty: 2
+type: edit
+instructions: |
+  Borra dos caracteres con `x` `x` y deshaz ambos cambios con `u` `u`.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 4
+solution: "xxuu"
+allowed: [x, u]
+forbid_arrows: true
+hints:
+  - "cada x es su propia unidad de deshacer; necesitas un u por cada una"

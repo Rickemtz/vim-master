@@ -1,0 +1,19 @@
+id: borrar-003
+module: 4
+title: "Borra hasta un carácter"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `df,` para borrar todo hasta la primera coma, incluyéndola.
+initial: |
+  el coche, rojo
+cursor_start: [0, 0]
+target: " rojo"
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "df,"
+allowed: [d, f]
+forbid_arrows: true
+hints:
+  - "df seguido de un carácter borra hasta incluirlo"

@@ -1,0 +1,21 @@
+id: borrar-001
+module: 4
+title: "Borra una palabra"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `dw` para borrar "coche " (con el espacio) usando el operador `d`
+  con el movimiento `w`.
+initial: |
+  el coche rojo
+cursor_start: [0, 3]
+target: |
+  el rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 2
+solution: "dw"
+allowed: [d, w]
+forbid_arrows: true
+hints:
+  - "d combinado con un movimiento borra desde el cursor hasta ahí"

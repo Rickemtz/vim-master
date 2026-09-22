@@ -1,0 +1,21 @@
+id: sust-002
+module: 11
+title: "Sustituye todas las coincidencias de la línea"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `:s/rojo/azul/g` para cambiar todas las "rojo" de la línea, no
+  solo la primera.
+initial: |
+  rojo, rojo y rojo
+cursor_start: [0, 0]
+target: |
+  azul, azul y azul
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 15
+solution: ":s/rojo/azul/g<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "la bandera g al final hace que cambie TODAS las coincidencias de la línea"

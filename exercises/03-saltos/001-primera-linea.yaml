@@ -1,0 +1,26 @@
+id: saltos-001
+module: 3
+title: "Salta a la primera línea"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `gg` para ir a la primera línea del archivo.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [3, 0]
+target: |
+  uno
+  dos
+  tres
+  cuatro
+target_cursor: [0, 0]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "gg"
+allowed: [gg]
+forbid_arrows: true
+hints:
+  - "gg (la g dos veces) va a la primera línea"

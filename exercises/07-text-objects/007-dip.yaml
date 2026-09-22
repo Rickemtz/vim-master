@@ -1,0 +1,25 @@
+id: textobj-007
+module: 7
+title: "Borra un párrafo (dip)"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `dip` para borrar el bloque de líneas no vacías donde está el
+  cursor, sin tocar la línea en blanco ni lo que sigue.
+initial: |
+  uno
+  dos
+
+  cuatro
+cursor_start: [0, 0]
+target: |
+
+  cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "dip"
+allowed: []
+forbid_arrows: true
+hints:
+  - "ip = inner paragraph: un bloque de líneas separado por líneas en blanco"

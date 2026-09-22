@@ -1,0 +1,25 @@
+id: macro-005
+module: 12
+title: "Macro para borrar un prefijo repetido"
+difficulty: 4
+type: edit
+instructions: |
+  Graba `dwj` (borra la primera palabra y baja), y repítela para
+  limpiar las tres líneas.
+initial: |
+  x uno
+  x dos
+  x tres
+cursor_start: [0, 0]
+target: |
+  uno
+  dos
+  tres
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 10
+solution: "qadwjq@a@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "dw borra \"x \" completo porque el espacio forma parte del motion hasta la siguiente palabra"

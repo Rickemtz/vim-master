@@ -1,0 +1,26 @@
+id: copiar-007
+module: 6
+title: "Copia una línea a otra parte del archivo"
+difficulty: 3
+type: edit
+instructions: |
+  Copia "rojo" con `yy`, baja dos líneas con `j` `j`, y pégala debajo con
+  `p`.
+initial: |
+  rojo
+  verde
+  azul
+cursor_start: [0, 0]
+target: |
+  rojo
+  verde
+  azul
+  rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 5
+solution: "yyjjp"
+allowed: []
+forbid_arrows: true
+hints:
+  - "el registro sin nombre guarda lo último copiado o borrado hasta el próximo yank o delete"

@@ -1,0 +1,20 @@
+id: saltos-006
+module: 3
+title: "Para justo antes del carácter"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `tr` para parar justo antes de la siguiente "r".
+initial: |
+  el coche rojo
+cursor_start: [0, 0]
+target: |
+  el coche rojo
+target_cursor: [0, 8]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "tr"
+allowed: [t]
+forbid_arrows: true
+hints:
+  - "t es como f pero se detiene un carácter antes"

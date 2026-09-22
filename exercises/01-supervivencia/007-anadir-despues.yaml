@@ -1,0 +1,21 @@
+id: supervivencia-007
+module: 1
+title: "Añade después del cursor"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `a` para entrar en modo Insert después del cursor y completa la
+  palabra "hol" añadiendo una "a".
+initial: |
+  hol
+cursor_start: [0, 2]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "aa<Esc>"
+allowed: [a]
+forbid_arrows: true
+hints:
+  - "a entra en modo Insert justo después del cursor"

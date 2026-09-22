@@ -1,0 +1,20 @@
+id: palabras-004
+module: 2
+title: "Salta al final de la palabra"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `e` para saltar al último carácter de la palabra actual.
+initial: |
+  el coche rojo
+cursor_start: [0, 0]
+target: |
+  el coche rojo
+target_cursor: [0, 1]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "e"
+allowed: [e]
+forbid_arrows: true
+hints:
+  - "e salta al último carácter de la palabra"

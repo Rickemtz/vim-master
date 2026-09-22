@@ -1,0 +1,21 @@
+id: visual-004
+module: 9
+title: "Combina Visual con un text object"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `viw` para seleccionar la palabra completa bajo el cursor de una
+  vez, y `d` para borrarla.
+initial: |
+  el coche rojo
+cursor_start: [0, 5]
+target: |
+  el  rojo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 4
+solution: "viwd"
+allowed: []
+forbid_arrows: true
+hints:
+  - "viw selecciona la palabra igual que iw, pero puedes seguir extendiendo la selección antes de actuar"

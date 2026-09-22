@@ -1,0 +1,21 @@
+id: macro-003
+module: 12
+title: "@@ repite la última macro usada"
+difficulty: 3
+type: edit
+instructions: |
+  Graba `x` en "a" con `qaxq`, ejecútala una vez con `@a`, y repítela
+  otra vez con `@@` (sin volver a escribir el nombre del registro).
+initial: |
+  ---hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 8
+solution: "qaxq@a@@"
+allowed: []
+forbid_arrows: true
+hints:
+  - "@@ repite la última macro que hayas ejecutado con @"

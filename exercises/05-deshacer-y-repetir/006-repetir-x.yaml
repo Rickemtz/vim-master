@@ -1,0 +1,20 @@
+id: deshacer-006
+module: 5
+title: "Repite x con ."
+difficulty: 1
+type: edit
+instructions: |
+  Borra un carácter con `x` y repite con `.` para borrar dos en total.
+initial: |
+  holamundo
+cursor_start: [0, 0]
+target: |
+  lamundo
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "x."
+allowed: [x]
+forbid_arrows: true
+hints:
+  - ". repite el último cambio en la posición actual del cursor"

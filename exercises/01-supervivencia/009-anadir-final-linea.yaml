@@ -1,0 +1,21 @@
+id: supervivencia-009
+module: 1
+title: "Añade al final de la línea"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `A` para ir al final de la línea e insertar " mundo", sin importar
+  dónde esté el cursor.
+initial: |
+  Hola
+cursor_start: [0, 0]
+target: |
+  Hola mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 8
+solution: "A mundo<Esc>"
+allowed: [A]
+forbid_arrows: true
+hints:
+  - "A inserta al final de la línea, como si fuera $a"

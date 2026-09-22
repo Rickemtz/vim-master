@@ -1,0 +1,20 @@
+id: visual-001
+module: 9
+title: "Selecciona y borra con v"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `v` para entrar en modo Visual, `lll` para extender la selección
+  y `d` para borrarla.
+initial: |
+  hola mundo
+cursor_start: [0, 0]
+target: " mundo"
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 5
+solution: "vllld"
+allowed: []
+forbid_arrows: true
+hints:
+  - "en Visual, los movimientos extienden la selección en vez de mover solo el cursor"

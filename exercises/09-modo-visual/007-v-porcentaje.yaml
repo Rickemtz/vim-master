@@ -1,0 +1,21 @@
+id: visual-007
+module: 9
+title: "Combina Visual con %"
+difficulty: 4
+type: edit
+instructions: |
+  Con el cursor sobre el primer paréntesis, usa `v%d` para seleccionar
+  hasta su pareja (incluida) y borrarla.
+initial: |
+  foo(bar, baz) fin
+cursor_start: [0, 3]
+target: |
+  foo fin
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 3
+solution: "v%d"
+allowed: []
+forbid_arrows: true
+hints:
+  - "% dentro de Visual extiende la selección hasta el bracket que hace pareja"

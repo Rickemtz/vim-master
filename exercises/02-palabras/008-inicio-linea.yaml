@@ -1,0 +1,21 @@
+id: palabras-008
+module: 2
+title: "Inicio de línea"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `0` para ir a la columna 0 de la línea, sin importar dónde esté el
+  cursor.
+initial: |
+  hola mundo
+cursor_start: [0, 7]
+target: |
+  hola mundo
+target_cursor: [0, 0]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "0"
+allowed: ["0"]
+forbid_arrows: true
+hints:
+  - "0 siempre va a la primera columna, aunque haya espacios"

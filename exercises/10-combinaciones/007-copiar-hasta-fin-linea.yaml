@@ -1,0 +1,21 @@
+id: combo-007
+module: 10
+title: "Copia hasta el final de línea y pega"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `y$` para copiar desde el cursor hasta el final de la línea, `0`
+  para volver al inicio, y `P` para pegarlo antes.
+initial: |
+  mundo
+cursor_start: [0, 0]
+target: |
+  mundomundo
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 4
+solution: "y$0P"
+allowed: []
+forbid_arrows: true
+hints:
+  - "y$ es equivalente a Y en Vim real"

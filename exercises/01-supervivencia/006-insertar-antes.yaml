@@ -1,0 +1,22 @@
+id: supervivencia-006
+module: 1
+title: "Entra en modo Insert"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `i` para entrar en modo Insert antes del cursor, escribe "Hola " y
+  vuelve a modo Normal con `Esc`.
+initial: |
+  mundo
+cursor_start: [0, 0]
+target: |
+  Hola mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 7
+solution: "iHola <Esc>"
+allowed: [i]
+forbid_arrows: true
+hints:
+  - "i entra en modo Insert justo antes del cursor"
+  - "Esc vuelve a modo Normal"

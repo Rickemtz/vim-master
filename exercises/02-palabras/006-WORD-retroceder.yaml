@@ -1,0 +1,20 @@
+id: palabras-006
+module: 2
+title: "WORD: retrocede ignorando puntuación"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `B` para retroceder a la WORD anterior.
+initial: |
+  el auto-rojo veloz
+cursor_start: [0, 13]
+target: |
+  el auto-rojo veloz
+target_cursor: [0, 3]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "B"
+allowed: [B]
+forbid_arrows: true
+hints:
+  - "B es como b pero trata la puntuación pegada como parte de la WORD"

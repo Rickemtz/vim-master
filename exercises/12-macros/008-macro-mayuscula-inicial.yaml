@@ -1,0 +1,26 @@
+id: macro-008
+module: 12
+title: "Macro para poner mayúscula inicial"
+difficulty: 4
+type: edit
+instructions: |
+  Graba `0~j` (vuelve al inicio, alterna mayúscula/minúscula del primer
+  carácter y baja) y repítela para las tres líneas.
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [0, 0]
+target: |
+  Uno
+  Dos
+  Tres
+target_cursor: null
+time_limit_sec: 30
+par_keystrokes: 9
+solution: "qa0~jq@a@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "0 asegura que la macro siempre empiece desde el inicio de la línea"
+  - "~ alterna mayúscula/minúscula de un carácter y avanza el cursor"

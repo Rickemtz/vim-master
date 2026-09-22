@@ -1,0 +1,21 @@
+id: busqueda-003
+module: 8
+title: "Repite la búsqueda con n"
+difficulty: 3
+type: cursor
+instructions: |
+  Busca "la" con `/la` y Enter, y repite con `n` para llegar a la
+  tercera coincidencia.
+initial: |
+  la sala se llama Lala
+cursor_start: [0, 0]
+target: |
+  la sala se llama Lala
+target_cursor: [0, 12]
+time_limit_sec: 25
+par_keystrokes: 5
+solution: "/la<CR>n"
+allowed: []
+forbid_arrows: true
+hints:
+  - "n repite la última búsqueda en la misma dirección"

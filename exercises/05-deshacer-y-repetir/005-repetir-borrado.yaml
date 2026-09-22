@@ -1,0 +1,21 @@
+id: deshacer-005
+module: 5
+title: "Repite un borrado con ."
+difficulty: 2
+type: edit
+instructions: |
+  Borra la primera palabra con `dw` y repite el mismo borrado con `.`
+  para quitar la segunda también.
+initial: |
+  uno dos tres cuatro
+cursor_start: [0, 0]
+target: |
+  tres cuatro
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "dw."
+allowed: [d, w]
+forbid_arrows: true
+hints:
+  - ". repite el último cambio, con el mismo comando y count"

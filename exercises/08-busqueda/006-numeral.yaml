@@ -1,0 +1,21 @@
+id: busqueda-006
+module: 8
+title: "Busca hacia atrás con #"
+difficulty: 3
+type: cursor
+instructions: |
+  Con el cursor sobre el segundo "gato", usa `#` para volver a la
+  aparición anterior de esa palabra completa.
+initial: |
+  gato negro, gatito y otro gato
+cursor_start: [0, 26]
+target: |
+  gato negro, gatito y otro gato
+target_cursor: [0, 0]
+time_limit_sec: 20
+par_keystrokes: 1
+solution: "#"
+allowed: []
+forbid_arrows: true
+hints:
+  - "# es como * pero busca hacia atrás"

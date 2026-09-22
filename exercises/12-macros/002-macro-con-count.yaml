@@ -1,0 +1,21 @@
+id: macro-002
+module: 12
+title: "Repite una macro con un count"
+difficulty: 3
+type: edit
+instructions: |
+  Graba `x` en el registro "a" con `qaxq`, y repítela 3 veces de una
+  sola vez con `3@a`.
+initial: |
+  ----hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 7
+solution: "qaxq3@a"
+allowed: []
+forbid_arrows: true
+hints:
+  - "un count antes de @a repite la macro esa cantidad de veces"

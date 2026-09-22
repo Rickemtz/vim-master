@@ -1,0 +1,23 @@
+id: copiar-003
+module: 6
+title: "Duplica una línea debajo"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `yy` para copiar la línea completa y `p` para pegarla debajo.
+initial: |
+  hola
+  mundo
+cursor_start: [0, 0]
+target: |
+  hola
+  hola
+  mundo
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "yyp"
+allowed: [y, p]
+forbid_arrows: true
+hints:
+  - "yy copia la línea entera; p la pega debajo"

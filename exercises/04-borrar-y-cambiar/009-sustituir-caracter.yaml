@@ -1,0 +1,21 @@
+id: borrar-009
+module: 4
+title: "Sustituye un carácter"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `s` para borrar el carácter bajo el cursor y entrar en Insert para
+  escribir "XY" en su lugar.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  XYola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 4
+solution: "sXY<Esc>"
+allowed: [s]
+forbid_arrows: true
+hints:
+  - "s es como x seguido de i"

@@ -1,0 +1,21 @@
+id: deshacer-001
+module: 5
+title: "Deshaz un borrado"
+difficulty: 1
+type: edit
+instructions: |
+  Borra el primer carácter con `x` y luego deshazlo con `u`: el texto
+  debe volver a su estado original.
+initial: |
+  hola
+cursor_start: [0, 0]
+target: |
+  hola
+target_cursor: null
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "xu"
+allowed: [x, u]
+forbid_arrows: true
+hints:
+  - "u deshace el último cambio"

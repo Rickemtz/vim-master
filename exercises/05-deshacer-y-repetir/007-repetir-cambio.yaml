@@ -1,0 +1,21 @@
+id: deshacer-007
+module: 5
+title: "Repite un cambio con ."
+difficulty: 4
+type: edit
+instructions: |
+  Cambia "aaa" por "XXX" con `cwXXX<Esc>`, avanza con `w` hasta "bbb" y
+  repite el cambio con `.` para convertirla también en "XXX".
+initial: |
+  aaa bbb ccc
+cursor_start: [0, 0]
+target: |
+  XXX XXX ccc
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 8
+solution: "cwXXX<Esc>w."
+allowed: [c, w]
+forbid_arrows: true
+hints:
+  - ". repite el cambio completo (operador, movimiento y texto escrito)"

@@ -1,0 +1,26 @@
+id: saltos-003
+module: 3
+title: "Salta a una línea específica"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `3G` para ir directamente a la línea 3.
+initial: |
+  uno
+  dos
+  tres
+  cuatro
+cursor_start: [0, 0]
+target: |
+  uno
+  dos
+  tres
+  cuatro
+target_cursor: [2, 0]
+time_limit_sec: 15
+par_keystrokes: 2
+solution: "3G"
+allowed: [G]
+forbid_arrows: true
+hints:
+  - "{número}G va directo a esa línea"

@@ -1,0 +1,25 @@
+id: combo-008
+module: 10
+title: "Operador > con un motion"
+difficulty: 3
+type: edit
+instructions: |
+  Usa `>j` para indentar la línea actual y la siguiente (el operador `>`
+  con el movimiento `j`, no hace falta doblar la letra).
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [0, 0]
+target: |2
+      uno
+      dos
+  tres
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 2
+solution: ">j"
+allowed: []
+forbid_arrows: true
+hints:
+  - "> siempre indenta líneas completas, incluso combinado con un motion charwise como j"

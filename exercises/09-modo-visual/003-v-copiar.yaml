@@ -1,0 +1,21 @@
+id: visual-003
+module: 9
+title: "Selecciona y copia con y"
+difficulty: 2
+type: edit
+instructions: |
+  Selecciona "hola" con `v` y `lll`, cópiala con `y`, ve al final con
+  `$`, y pégala con `p`.
+initial: |
+  hola mundo
+cursor_start: [0, 0]
+target: |
+  hola mundohola
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 7
+solution: "vllly$p"
+allowed: []
+forbid_arrows: true
+hints:
+  - "y en Visual copia la selección sin borrarla"

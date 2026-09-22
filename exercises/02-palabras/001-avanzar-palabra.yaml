@@ -1,0 +1,20 @@
+id: palabras-001
+module: 2
+title: "Avanza una palabra"
+difficulty: 1
+type: cursor
+instructions: |
+  Usa `w` para saltar al inicio de la siguiente palabra.
+initial: |
+  el coche rojo
+cursor_start: [0, 0]
+target: |
+  el coche rojo
+target_cursor: [0, 3]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "w"
+allowed: [w]
+forbid_arrows: true
+hints:
+  - "w salta al inicio de la siguiente palabra"

@@ -1,0 +1,20 @@
+id: saltos-010
+module: 3
+title: "Salta a la pareja del paréntesis"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `%` para saltar del primer paréntesis a su pareja.
+initial: |
+  func(a, b)
+cursor_start: [0, 0]
+target: |
+  func(a, b)
+target_cursor: [0, 9]
+time_limit_sec: 15
+par_keystrokes: 1
+solution: "%"
+allowed: ["%"]
+forbid_arrows: true
+hints:
+  - "% busca desde el cursor el primer ()[]{} y salta a su pareja"

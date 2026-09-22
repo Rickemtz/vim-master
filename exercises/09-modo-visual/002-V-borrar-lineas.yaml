@@ -1,0 +1,23 @@
+id: visual-002
+module: 9
+title: "Selecciona líneas completas con V"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `V` para seleccionar la línea completa, `j` para extender la
+  selección una línea más, y `d` para borrar ambas.
+initial: |
+  uno
+  dos
+  tres
+cursor_start: [0, 0]
+target: |
+  tres
+target_cursor: null
+time_limit_sec: 20
+par_keystrokes: 3
+solution: "Vjd"
+allowed: []
+forbid_arrows: true
+hints:
+  - "V selecciona líneas enteras, no caracteres"

@@ -1,0 +1,23 @@
+id: sust-008
+module: 11
+title: "Baja una línea y sustituye ahí"
+difficulty: 2
+type: edit
+instructions: |
+  Usa `j` para bajar a la segunda línea, y `:s/malo/bueno/` para
+  cambiarla solo ahí.
+initial: |
+  esto es malo
+  esto tambien es malo
+cursor_start: [0, 0]
+target: |
+  esto es malo
+  esto tambien es bueno
+target_cursor: null
+time_limit_sec: 25
+par_keystrokes: 16
+solution: "j:s/malo/bueno/<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "mueve el cursor primero a la línea que quieres cambiar"

@@ -1,0 +1,21 @@
+id: busqueda-001
+module: 8
+title: "Busca hacia adelante"
+difficulty: 2
+type: cursor
+instructions: |
+  Usa `/mundo` y Enter para saltar a la siguiente coincidencia de
+  "mundo".
+initial: |
+  hola mundo cruel mundo
+cursor_start: [0, 0]
+target: |
+  hola mundo cruel mundo
+target_cursor: [0, 5]
+time_limit_sec: 20
+par_keystrokes: 7
+solution: "/mundo<CR>"
+allowed: []
+forbid_arrows: true
+hints:
+  - "/ abre la búsqueda hacia adelante; Enter confirma"
