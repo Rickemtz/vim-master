@@ -6,10 +6,10 @@ LDFLAGS := -s -w -X main.version=$(VERSION) -X main.commit=$(COMMIT) -X main.dat
 .PHONY: run build test lint validate release-snapshot
 
 run:
-	go run ./cmd/vimdojo
+	go run ./cmd/vim-master
 
 build:
-	go build -ldflags "$(LDFLAGS)" -o ./bin/vimdojo ./cmd/vimdojo
+	go build -ldflags "$(LDFLAGS)" -o ./bin/vim-master ./cmd/vim-master
 
 test:
 	go test ./...

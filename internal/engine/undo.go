@@ -3,7 +3,7 @@ package engine
 // undoState es una foto completa del buffer y el cursor. Vim real hace
 // undo por diffs; aquí usamos snapshots completos por simplicidad, lo que
 // es correcto y suficientemente rápido para los tamaños de buffer de
-// VimDojo.
+// Vim Master.
 type undoState struct {
 	text   string
 	cursor Pos

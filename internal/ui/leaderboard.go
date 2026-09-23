@@ -6,7 +6,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/kyrcovarick/vimdojo/internal/storage"
+	"github.com/Rickemtz/vim-master/internal/storage"
 )
 
 // leaderboardModel muestra el top 10 de cada modo de juego. Navega entre

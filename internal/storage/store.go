@@ -1,5 +1,5 @@
-// Package storage lee y escribe el progreso y los récords de VimDojo en
-// ~/.config/vimdojo/ (JSON). Escribe en un archivo temporal y hace rename
+// Package storage lee y escribe el progreso y los récords de Vim Master en
+// ~/.config/vim-master/ (JSON). Escribe en un archivo temporal y hace rename
 // para no corromper datos a medio escribir; si un archivo existente está
 // dañado, lo respalda como .bak y sigue con valores por defecto.
 package storage
@@ -25,7 +25,7 @@ func New() (*Store, error) {
 	if err != nil {
 		return nil, fmt.Errorf("obtener directorio de configuración: %w", err)
 	}
-	return NewAt(filepath.Join(base, "vimdojo"))
+	return NewAt(filepath.Join(base, "vim-master"))
 }
 
 // NewAt crea un Store en un directorio explícito (usado en tests, o para

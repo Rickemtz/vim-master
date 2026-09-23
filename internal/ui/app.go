@@ -1,4 +1,4 @@
-// Package ui contiene el modelo Bubble Tea (Elm-like) de VimDojo: pantallas
+// Package ui contiene el modelo Bubble Tea (Elm-like) de Vim Master: pantallas
 // y su enrutado. No contiene lógica del motor de Vim ni de puntuación.
 package ui
 
@@ -8,9 +8,9 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/kyrcovarick/vimdojo/exercises"
-	"github.com/kyrcovarick/vimdojo/internal/exercise"
-	"github.com/kyrcovarick/vimdojo/internal/storage"
+	"github.com/Rickemtz/vim-master/exercises"
+	"github.com/Rickemtz/vim-master/internal/exercise"
+	"github.com/Rickemtz/vim-master/internal/storage"
 )
 
 type screen int
@@ -41,7 +41,7 @@ type App struct {
 
 	width, height int // último tamaño de terminal conocido (0 = aún sin WindowSizeMsg)
 
-	store    *storage.Store // nil si no se pudo abrir ~/.config/vimdojo
+	store    *storage.Store // nil si no se pudo abrir ~/.config/vim-master
 	progress storage.Progress
 }
 

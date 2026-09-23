@@ -1,11 +1,11 @@
 // Package exercise carga, valida y resuelve los ejercicios YAML de
-// VimDojo. No depende de la UI.
+// Vim Master. No depende de la UI.
 package exercise
 
 import (
 	"fmt"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/engine"
 )
 
 type Type string

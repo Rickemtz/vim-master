@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kyrcovarick/vimdojo/exercises"
-	"github.com/kyrcovarick/vimdojo/internal/exercise"
+	"github.com/Rickemtz/vim-master/exercises"
+	"github.com/Rickemtz/vim-master/internal/exercise"
 )
 
 func main() {

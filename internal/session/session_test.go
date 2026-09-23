@@ -3,7 +3,7 @@ package session
 import (
 	"testing"
 
-	"github.com/kyrcovarick/vimdojo/internal/exercise"
+	"github.com/Rickemtz/vim-master/internal/exercise"
 )
 
 func TestSessionFlow(t *testing.T) {

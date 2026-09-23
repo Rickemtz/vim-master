@@ -1,10 +1,10 @@
-# CLAUDE.md — VimDojo
+# CLAUDE.md — Vim Master
 
 Guía de trabajo para Claude Code en este repositorio. Léela completa antes de cada tarea.
 
 ## Qué es este proyecto
 
-**VimDojo** es una aplicación de terminal (TUI) para aprender Vim jugando. Combina tres ideas:
+**Vim Master** es una aplicación de terminal (TUI) para aprender Vim jugando. Combina tres ideas:
 
 1. **Lecciones progresivas** estilo "Vim Master" / vimtutor: módulos que enseñan comandos de menor a mayor dificultad.
 2. **Contrarreloj**: cada ejercicio tiene un límite de tiempo; terminar rápido da bonus.
@@ -19,7 +19,7 @@ El usuario escribe comandos Vim reales dentro de un editor emulado. La app valid
 - **Estilos:** [Lip Gloss](https://github.com/charmbracelet/lipgloss).
 - **Componentes:** [Bubbles](https://github.com/charmbracelet/bubbles) (listas, timer, progress).
 - **Ejercicios:** archivos YAML embebidos con `go:embed` (`gopkg.in/yaml.v3`).
-- **Persistencia:** JSON en `~/.config/vimdojo/` (progreso y récords).
+- **Persistencia:** JSON en `~/.config/vim-master/` (progreso y récords).
 - **Tests:** `testing` estándar + tablas de casos. Sin frameworks extra.
 
 No agregar dependencias nuevas sin preguntar primero.
@@ -27,24 +27,24 @@ No agregar dependencias nuevas sin preguntar primero.
 ## Comandos
 
 ```bash
-make run              # go run ./cmd/vimdojo
-make build            # binario en ./bin/vimdojo, con versión/commit/fecha inyectados
+make run              # go run ./cmd/vim-master
+make build            # binario en ./bin/vim-master, con versión/commit/fecha inyectados
 make test             # go test ./...
 make lint             # go vet ./... && gofmt -l .
 make validate         # valida todos los ejercicios YAML (go run ./cmd/validate)
 make release-snapshot # build multiplataforma local con goreleaser, sin publicar nada
 ```
 
-`vimdojo --version` muestra versión/commit/fecha de build. El release real (tags + publicar en GitHub) se hace con `goreleaser release` (ver `.goreleaser.yaml`); necesita un repo git con remote y un tag.
+`vim-master --version` muestra versión/commit/fecha de build. El release real (tags + publicar en GitHub) se hace con `goreleaser release` (ver `.goreleaser.yaml`); necesita un repo git con remote y un tag.
 
 Antes de dar una tarea por terminada: `make test` y `make lint` deben pasar.
 
 ## Estructura del proyecto
 
 ```
-vimdojo/
+vim-master/
 ├── cmd/
-│   ├── vimdojo/          # main: arranca la TUI
+│   ├── vim-master/       # main: arranca la TUI
 │   └── validate/         # valida ejercicios: resuelve cada uno con su "solution" y comprueba el target
 ├── internal/
 │   ├── engine/           # emulador de Vim (SIN dependencias de UI)
@@ -250,7 +250,7 @@ Respetar tamaño mínimo de terminal 80×24; si es menor, mostrar aviso en lugar
 
 ## Persistencia
 
-`~/.config/vimdojo/` (usar `os.UserConfigDir()`):
+`~/.config/vim-master/` (usar `os.UserConfigDir()`):
 - `progress.json`: módulos desbloqueados, mejor rango por módulo, ejercicios completados.
 - `scores.json`: top 10 por modo de juego (nombre, puntaje, rango, fecha).
 

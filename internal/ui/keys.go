@@ -3,7 +3,7 @@ package ui
 import (
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/engine"
 )
 
 // translateKey traduce una tecla de Bubble Tea a la representación que

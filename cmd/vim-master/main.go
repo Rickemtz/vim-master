@@ -6,7 +6,7 @@ import (
 
 	tea "github.com/charmbracelet/bubbletea"
 
-	"github.com/kyrcovarick/vimdojo/internal/ui"
+	"github.com/Rickemtz/vim-master/internal/ui"
 )
 
 // version/commit/date se rellenan en tiempo de build vía -ldflags (ver
@@ -19,7 +19,7 @@ var (
 
 func main() {
 	if len(os.Args) > 1 && (os.Args[1] == "--version" || os.Args[1] == "-v") {
-		fmt.Printf("vimdojo %s (commit %s, built %s)\n", version, commit, date)
+		fmt.Printf("vim-master %s (commit %s, built %s)\n", version, commit, date)
 		return
 	}
 

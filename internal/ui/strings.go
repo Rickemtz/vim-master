@@ -5,7 +5,7 @@ package ui
 import (
 	"fmt"
 
-	"github.com/kyrcovarick/vimdojo/internal/storage"
+	"github.com/Rickemtz/vim-master/internal/storage"
 )
 
 // General / errores, compartidos entre pantallas.
@@ -22,12 +22,12 @@ func strTerminalTooSmall(width, height int) string {
 }
 
 func strTerminalMinSize(minW, minH int) string {
-	return fmt.Sprintf("VimDojo necesita al menos %dx%d. Agranda la ventana.", minW, minH)
+	return fmt.Sprintf("Vim Master necesita al menos %dx%d. Agranda la ventana.", minW, minH)
 }
 
 // Menú principal (menu.go).
 const (
-	appTitle    = "VimDojo"
+	appTitle    = "Vim Master"
 	strMenuHelp = "↑/↓ navegar · F10/q salir"
 )
 
@@ -49,10 +49,11 @@ const (
 	strObjectiveLabel  = "Objetivo:"
 	strLessonHelp      = "F1 pista · F2 reiniciar · F10 salir al menú"
 	strExamHelp        = "Examen final: sin pistas · F2 reiniciar · F10 salir al menú"
+	strFmtHUDScore     = "   puntos: %d   combo x%.1f\n"
 )
 
-func strExerciseDone(points int) string       { return fmt.Sprintf("¡Bien hecho! +%d pts", points) }
-func strExerciseLabel(cur int) string         { return fmt.Sprintf("Ejercicio %d", cur) }
+func strExerciseDone(points int) string         { return fmt.Sprintf("¡Bien hecho! +%d pts", points) }
+func strExerciseLabel(cur int) string           { return fmt.Sprintf("Ejercicio %d", cur) }
 func strExerciseLabelTotal(cur, tot int) string { return fmt.Sprintf("Ejercicio %d/%d", cur, tot) }
 
 // Pantalla de resultados (results.go).
@@ -64,6 +65,13 @@ const (
 	strNewRecord         = "¡Nuevo récord!"
 	strImprovedRank      = "¡Mejoraste tu mejor rango en este módulo!"
 	strCommandsUsedLabel = "Comandos más usados:"
+
+	strFmtScore      = "Puntaje:     %d\n"
+	strFmtPercentage = "Porcentaje:  %.1f%%\n\n"
+	strFmtTotalTime  = "Tiempo total:      %s\n"
+	strFmtKeystrokes = "Teclas:            %d (par %d)\n"
+	strFmtAccuracy   = "Precisión:         %d/%d (%.0f%%)\n"
+	strFmtMaxCombo   = "Combo máximo:      x%.1f\n\n"
 )
 
 func strModuleUnlocked(module int) string {

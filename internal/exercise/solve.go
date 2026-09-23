@@ -3,7 +3,7 @@ package exercise
 import (
 	"fmt"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/engine"
 )
 
 // Result es el resultado de resolver un ejercicio con su Solution usando

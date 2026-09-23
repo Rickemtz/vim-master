@@ -8,7 +8,7 @@ import (
 
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/kyrcovarick/vimdojo/internal/scoring"
+	"github.com/Rickemtz/vim-master/internal/scoring"
 )
 
 // resultsModel muestra el puntaje final de una sesión terminada. No hay
@@ -47,14 +47,14 @@ func (m resultsModel) View() string {
 	if m.official {
 		rankLabel = strLabelRankOfficial
 	}
-	fmt.Fprintf(&b, "Puntaje:     %d\n", s.TotalPoints)
+	fmt.Fprintf(&b, strFmtScore, s.TotalPoints)
 	fmt.Fprintf(&b, "%s %s\n", rankLabel, rankStyle(s.Rank).Render(string(s.Rank)))
-	fmt.Fprintf(&b, "Porcentaje:  %.1f%%\n\n", s.Percentage)
+	fmt.Fprintf(&b, strFmtPercentage, s.Percentage)
 
-	fmt.Fprintf(&b, "Tiempo total:      %s\n", time.Duration(s.TotalTimeSec*float64(time.Second)).Round(time.Second))
-	fmt.Fprintf(&b, "Teclas:            %d (par %d)\n", s.TotalKeystrokes, s.TotalPar)
-	fmt.Fprintf(&b, "Precisión:         %d/%d (%.0f%%)\n", s.Completed, s.Attempted, s.Accuracy)
-	fmt.Fprintf(&b, "Combo máximo:      x%.1f\n\n", s.MaxCombo)
+	fmt.Fprintf(&b, strFmtTotalTime, time.Duration(s.TotalTimeSec*float64(time.Second)).Round(time.Second))
+	fmt.Fprintf(&b, strFmtKeystrokes, s.TotalKeystrokes, s.TotalPar)
+	fmt.Fprintf(&b, strFmtAccuracy, s.Completed, s.Attempted, s.Accuracy)
+	fmt.Fprintf(&b, strFmtMaxCombo, s.MaxCombo)
 
 	if len(s.Commands) > 0 {
 		b.WriteString(strCommandsUsedLabel + "\n")

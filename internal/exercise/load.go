@@ -8,7 +8,7 @@ import (
 
 	"gopkg.in/yaml.v3"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/engine"
 )
 
 // rawExercise refleja el YAML tal cual, antes de convertir los pares

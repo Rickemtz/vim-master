@@ -6,7 +6,7 @@ package session
 import (
 	"math/rand"
 
-	"github.com/kyrcovarick/vimdojo/internal/exercise"
+	"github.com/Rickemtz/vim-master/internal/exercise"
 )
 
 // Session recorre una lista de ejercicios en orden. Con loop=true (usado

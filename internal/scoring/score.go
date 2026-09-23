@@ -1,4 +1,4 @@
-// Package scoring calcula los puntos, combos y rangos de VimDojo. Son
+// Package scoring calcula los puntos, combos y rangos de Vim Master. Son
 // funciones puras: no dependen de la UI ni del engine.
 package scoring
 

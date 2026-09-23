@@ -3,7 +3,7 @@ package exercise
 import (
 	"testing"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/engine"
 )
 
 func TestSolveEditOK(t *testing.T) {

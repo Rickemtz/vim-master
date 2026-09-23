@@ -1,4 +1,4 @@
-module github.com/kyrcovarick/vimdojo
+module github.com/Rickemtz/vim-master
 
 go 1.27.1
 

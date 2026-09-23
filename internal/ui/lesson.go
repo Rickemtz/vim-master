@@ -10,10 +10,10 @@ import (
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
 
-	"github.com/kyrcovarick/vimdojo/internal/engine"
-	"github.com/kyrcovarick/vimdojo/internal/exercise"
-	"github.com/kyrcovarick/vimdojo/internal/scoring"
-	"github.com/kyrcovarick/vimdojo/internal/session"
+	"github.com/Rickemtz/vim-master/internal/engine"
+	"github.com/Rickemtz/vim-master/internal/exercise"
+	"github.com/Rickemtz/vim-master/internal/scoring"
+	"github.com/Rickemtz/vim-master/internal/session"
 )
 
 // lessonKind distingue los cuatro modos de juego que comparten esta
@@ -316,7 +316,7 @@ func (m lessonModel) View() string {
 	if m.kind != kindGolf {
 		fmt.Fprintf(&b, "   %s", m.timerView())
 	}
-	fmt.Fprintf(&b, "   puntos: %d   combo x%.1f\n", m.acc.Summary().TotalPoints, m.acc.Combo())
+	fmt.Fprintf(&b, strFmtHUDScore, m.acc.Summary().TotalPoints, m.acc.Combo())
 	fmt.Fprintf(&b, "%s\n\n", helpStyle.Render(m.ex.Title))
 
 	b.WriteString(m.ex.Instructions)
